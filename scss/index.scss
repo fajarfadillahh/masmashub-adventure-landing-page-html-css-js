@@ -246,3 +246,34 @@ img {
     }
   }
 }
+
+// ===== PARTNER SECTION =====
+.partner {
+  padding: 5rem 0;
+
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data,
+  &__group {
+    justify-self: center;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__group {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem 1.5rem;
+  }
+
+  &__img {
+    width: 130px;
+    justify-self: center;
+    filter: grayscale(1);
+  }
+}
