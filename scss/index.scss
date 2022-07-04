@@ -338,3 +338,55 @@ img {
     line-height: $leading-text;
   }
 }
+
+// ===== FEATURE SECTION =====
+.feature {
+  background-color: $orange-color;
+
+  &__container {
+    gap: 2rem;
+  }
+
+  &__title {
+    color: $white-color;
+  }
+
+  &__group {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__content,
+  &__img {
+    justify-self: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 0.8fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__item {
+    &-icon {
+      margin-bottom: $margin-1;
+    }
+
+    &-title,
+    &-text {
+      color: $white-color;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-bold;
+      margin-bottom: $margin-1;
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: $leading-text;
+    }
+  }
+}
