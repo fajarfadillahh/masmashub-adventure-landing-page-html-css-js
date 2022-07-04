@@ -1,0 +1,122 @@
+// ===== FONT GOGGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+// ===== VARIABLES SCSS =====
+// header height
+$header-height: 6rem;
+
+// color palette
+$orange-color: #ff6100;
+$black-color: #212529;
+$grey-color: #6c757d;
+$white-color: #ffffff;
+
+// font body
+$font-body: "Poppins", sans-serif;
+
+// font weight
+$font-reguler: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// margin
+$margin-0-5: 0.5rem;
+$margin-1: 1rem;
+$margin-1-5: 1.5rem;
+$margin-2: 2rem;
+$margin-2-5: 2.5rem;
+$margin-3: 3rem;
+$margin-3-5: 3.5rem;
+$margin-4: 4rem;
+
+// z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// transition
+$transition-300: 0.3s;
+
+// line-height
+$leading-title: 150%;
+$leading-text: 180%;
+
+// ===== RESET & BASE =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: $font-reguler;
+  letter-spacing: -0.03rem;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: $font-body;
+  font-weight: $font-reguler;
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLES CSS CLASS =====
+.section {
+  padding: 8rem 0;
+
+  &-title {
+    font-size: 28px;
+    font-weight: $font-bold;
+    color: $black-color;
+    margin-bottom: $margin-1;
+    line-height: $leading-title;
+  }
+
+  &-text {
+    font-size: 16px;
+    color: $grey-color;
+    line-height: $leading-text;
+  }
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $orange-color;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: $font-medium;
+  color: $white-color;
+  text-transform: capitalize;
+}
+
+.container {
+  max-width: 1280px;
+  width: calc(100% - 3rem);
+  margin: 0 $margin-1-5;
+}
+
+.grid {
+  display: grid;
+}
