@@ -121,6 +121,10 @@ img {
   display: grid;
 }
 
+.main {
+  overflow: hidden;
+}
+
 // ===== HEADER SECTION =====
 .header {
   position: fixed;
@@ -202,5 +206,43 @@ img {
     font-size: 1.5rem;
     color: $black-color;
     cursor: pointer;
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__img,
+  &__data {
+    justify-self: center;
+  }
+
+  &__img {
+    width: 320px;
+  }
+
+  &__text {
+    margin-bottom: $margin-2;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    &-play {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px;
+      border-radius: 10rem;
+      border: 2px solid rgba($color: #ff6100, $alpha: 0.3);
+      font-size: 1.5rem;
+      color: $orange-color;
+    }
   }
 }
