@@ -595,6 +595,11 @@ img {
     text-align: center;
   }
 
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
   &__title,
   &__text {
     color: $white-color;
@@ -607,5 +612,75 @@ img {
   &__button {
     background-color: $white-color;
     color: $orange-color;
+  }
+}
+
+// ===== FAQ SECTION =====
+.faq {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__accordion {
+    display: grid;
+    gap: 1.5rem;
+
+    &-item {
+      background-color: rgba($color: #ff6100, $alpha: 0.1);
+      border-radius: 1rem;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      cursor: pointer;
+    }
+
+    &-title {
+      font-size: 17px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      transition: $transition-300;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: $black-color;
+      transition: $transition-300;
+    }
+
+    &-content {
+      overflow: hidden;
+      height: 0;
+      transition: $transition-300;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $black-color;
+      line-height: $leading-text;
+      padding: 0 1.5rem 1.5rem;
+      transition: $transition-300;
+    }
+  }
+
+  // accordion open
+  .accordion-open {
+    &.faq__accordion-item {
+      background-color: $orange-color;
+    }
+
+    & .faq__accordion-title,
+    & .faq__accordion-icon,
+    & .faq__accordion-text {
+      color: $white-color;
+    }
+
+    & .faq__accordion-icon {
+      transform: rotate(45deg);
+    }
   }
 }
