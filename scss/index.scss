@@ -508,3 +508,74 @@ img {
     }
   }
 }
+
+// ===== PRICING SECTION =====
+.pricing {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  &__content {
+    width: 300px;
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    padding: 4rem 2rem;
+    border: 2px solid rgba($color: #000000, $alpha: 0.05);
+    border-radius: 2rem;
+    transition: $transition-300;
+
+    &:hover {
+      border-color: $orange-color;
+      background-color: $orange-color;
+      transform: translateY(-4px);
+
+      .pricing__content-title,
+      .pricing__content-price,
+      .pricing__content-text {
+        color: $white-color;
+      }
+    }
+
+    &-img {
+      justify-self: center;
+    }
+
+    &-title {
+      font-size: 36px;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-price {
+      font-size: 20px;
+      font-weight: $font-medium;
+      color: $orange-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-number {
+      font-size: 56px;
+      font-weight: $font-bold;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+  }
+}
