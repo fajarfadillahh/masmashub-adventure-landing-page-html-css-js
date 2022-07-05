@@ -579,3 +579,33 @@ img {
     }
   }
 }
+
+// ===== CALLBACK SECTION =====
+.callback {
+  padding: 5rem 0;
+
+  &__container {
+    gap: 3rem;
+    background-color: $orange-color;
+    padding: 5rem 2rem;
+    border-radius: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title,
+  &__text {
+    color: $white-color;
+  }
+
+  &__text {
+    margin-bottom: $margin-2;
+  }
+
+  &__button {
+    background-color: $white-color;
+    color: $orange-color;
+  }
+}
