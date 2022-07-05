@@ -626,8 +626,9 @@ img {
     gap: 1.5rem;
 
     &-item {
-      background-color: rgba($color: #ff6100, $alpha: 0.1);
+      background-color: rgba($color: #ff6100, $alpha: 0.05);
       border-radius: 1rem;
+      transition: $transition-300;
     }
 
     &-header {
@@ -647,7 +648,7 @@ img {
 
     &-icon {
       display: inline-flex;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: $black-color;
       transition: $transition-300;
     }
