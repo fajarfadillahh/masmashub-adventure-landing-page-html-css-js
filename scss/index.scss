@@ -1030,6 +1030,24 @@ img {
     grid-template-columns: repeat(6, max-content);
   }
 
+  .instructure {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 400px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 4rem solid rgba($color: #ff6100, $alpha: 0.1);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: $z-back;
+    }
+  }
+
   .feature__group {
     grid-template-columns: 1fr 0.6fr;
     align-items: center;
