@@ -220,6 +220,10 @@ img {
     gap: 3rem;
   }
 
+  &__birds {
+    display: none;
+  }
+
   &__img,
   &__data {
     justify-self: center;
@@ -999,16 +1003,27 @@ img {
     margin: 0 auto;
   }
 
-  .home__data {
-    justify-self: flex-start;
-  }
+  .home {
+    position: relative;
 
-  .home__title {
-    font-size: 52px;
-  }
+    &__birds {
+      position: absolute;
+      display: inline-flex;
+      top: 15%;
+      left: 30%;
+    }
 
-  .home__text {
-    width: 420px;
+    &__data {
+      justify-self: flex-start;
+    }
+
+    &__title {
+      font-size: 52px;
+    }
+
+    &__text {
+      width: 420px;
+    }
   }
 
   .partner__group {
