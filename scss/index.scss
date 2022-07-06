@@ -353,6 +353,10 @@ img {
     gap: 2rem;
   }
 
+  &__data {
+    justify-self: center;
+  }
+
   &__title {
     color: $white-color;
   }
@@ -703,6 +707,7 @@ img {
 
   &__data {
     text-align: center;
+    justify-self: center;
   }
 
   &__title,
@@ -713,6 +718,7 @@ img {
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    justify-self: center;
     align-items: center;
     background-color: rgba($color: #ffffff, $alpha: 0.15);
     border: 2px solid $white-color;
@@ -848,5 +854,27 @@ img {
   // scroll action
   &.scroll-action {
     bottom: 3rem;
+  }
+}
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__data,
+  .feature__data,
+  .feature__content,
+  .faq__data,
+  .newsletter__data,
+  .newsletter__wrapper {
+    width: 400px;
+  }
+
+  .home__img,
+  .feature__img {
+    width: 400px;
+  }
+
+  .partner__img {
+    width: 150px;
   }
 }
