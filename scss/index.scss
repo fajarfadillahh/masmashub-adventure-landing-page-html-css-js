@@ -1086,6 +1086,23 @@ img {
     }
   }
 
+  .newsletter {
+    position: relative;
+
+    &__cloud:nth-child(1) {
+      position: absolute;
+      width: 400px;
+      left: -10%;
+    }
+
+    &__cloud:nth-child(2) {
+      position: absolute;
+      width: 300px;
+      right: -10%;
+      bottom: 5%;
+    }
+  }
+
   .callback__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
