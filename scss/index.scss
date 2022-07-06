@@ -486,6 +486,10 @@ img {
     gap: 2rem;
   }
 
+  &__plane {
+    display: none;
+  }
+
   &__title {
     text-align: center;
   }
@@ -1048,17 +1052,38 @@ img {
     }
   }
 
-  .feature__group {
-    grid-template-columns: 1fr 0.6fr;
-    align-items: center;
+  .feature {
+    &__group {
+      grid-template-columns: 1fr 0.6fr;
+      align-items: center;
+    }
+
+    &__content {
+      justify-self: flex-start;
+    }
+
+    &__img {
+      width: auto;
+    }
   }
 
-  .feature__content {
-    justify-self: flex-start;
-  }
+  .team {
+    position: relative;
 
-  .feature__img {
-    width: auto;
+    &__plane {
+      position: absolute;
+      display: inline-flex;
+      top: 0;
+    }
+
+    &__plane:nth-child(2) {
+      right: 20%;
+    }
+
+    &__plane:nth-child(1) {
+      top: 10%;
+      left: -5%;
+    }
   }
 
   .callback__container {
