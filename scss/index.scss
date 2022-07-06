@@ -353,6 +353,7 @@ img {
     gap: 2rem;
   }
 
+  &__content,
   &__data {
     justify-self: center;
   }
@@ -922,5 +923,46 @@ img {
 
   .feature__data {
     justify-self: flex-start;
+  }
+}
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .header__container {
+    position: relative;
+  }
+
+  .header__list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 2rem;
+  }
+
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__img,
+  .home__data {
+    width: auto;
+  }
+
+  .home__data {
+    order: -1;
+  }
+
+  .home__title {
+    font-size: 42px;
+  }
+
+  .partner__group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .faq__accordion {
+    width: 800px;
+    justify-self: center;
   }
 }
