@@ -366,7 +366,6 @@ img {
     gap: 3rem;
   }
 
-  &__content,
   &__img {
     justify-self: center;
   }
@@ -862,7 +861,6 @@ img {
 @media screen and (min-width: 480px) {
   .home__data,
   .feature__data,
-  .feature__content,
   .faq__data,
   .newsletter__data,
   .newsletter__wrapper {
@@ -897,5 +895,32 @@ img {
 
   .callback__button {
     display: inline-flex;
+  }
+}
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+
+  .feature__data {
+    justify-self: flex-start;
   }
 }
